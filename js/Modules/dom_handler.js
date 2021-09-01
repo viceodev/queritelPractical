@@ -13,7 +13,7 @@ let handle_address_list =  function(response){
         resolvedLocationDataForMapUse[item.address_id] = item;
 
         domList.innerHTML += `
-            <a href="" id="list_item" data-type="location">
+            <a href="" id="list_item" data-type="location" data-id="${item.address_id}">
                 <div class="card">
                     <p>${item.address}</p>
                     <p>Users Total: ${item.users_required}</p>
@@ -39,7 +39,7 @@ let handle_user_list =  function(response){
         resolvedUserDataForMapUse[item.user_id] = item;
 
         domList.innerHTML += `
-            <a href="" id="list_item" data-type="user">
+            <a href="" id="list_item" data-type="user" data-id="${item.user_id}">
                 <div class="card">
                     <p>Username: ${item.fname} ${item.lname}</p>
                     <p>Number Of Location: ${item.location_list.length}</p>
