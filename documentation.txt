@@ -1,0 +1,35 @@
+The Required Project was built with HTML, SCSS(CSS Preprocessor) and JavaScript.
+
+I implemented the UI with HTML and SCSS which is CSS Preprocessor that makes writing styles faster and easier.
+
+I implemented the functionalities of the maps and Api request with JavaScript.
+
+I employed the use of modules to make sure my code is structured.
+
+For the JavaScript Modules, here is the list and what the files do.
+
+1. Google Maps Module: 
+    Path: './js/Modules/google_maps.js'
+    Function:  The instantiates google maps on the page.
+
+2. Utilities Module:
+    Path: './js/Modules/Utils.js'
+    Function: This file handles the Menu functionalities which calls a required Function in the Request Module based off the 'data-target' attribute on the menu list anchor tag.
+
+3. Request Module:
+    Path: './js/Modules/Request.js',
+    Function: This file contains the following functionalities
+        1. The base url for making http request
+        2. The functions for calling the right api when events are fired from the Utilities Module. These functions also calls the DOM Handler to handle the data gotten from the api.
+
+4. Dom Handler: 
+    Path: './js/Modules/dom_handler.js'
+    Function: This module contains functions that takes in response from whatever function that called it and then render it to the DOM.
+
+5. Map Hanlder:
+    Path: './js/Modules/map_handler.js'
+    Function: This module is proposed to contain the functions that handles the displays for the map.
+
+6. Loader: 
+    Path: './js/Modules/Loader.js'
+    Function: This modules provide functions that is used to initialize or stop the loader when a request is being made
